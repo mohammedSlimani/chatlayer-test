@@ -3,9 +3,15 @@
 > Parrot, repeats what you say
 
 ## About
-
 This project uses [Feathers](http://feathersjs.com) for the backend and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Reason of usage of Technologies:
+- React (javascript): is a requirement in the assignment
+- Feathersjs (javascript): In my opinion, feathersjs is one of the best frameworks when it comes to getting
+started with a boilerplate quickly. It sets up proper eslint, testing library (used mocha + assert), security (helmet),
+a proper logger (winston) and includes some improvement to the response with gzip. If the assignment included
+database tasks, feathers would have shined even more with its smooth integration of ORM libraries like sequelize
+or Knex. 
 ## Getting Started
 
 ### With `docker-compose`
@@ -15,7 +21,7 @@ This project uses [Feathers](http://feathersjs.com) for the backend and bootstra
     docker-compose up
     ```
 
-You should be able to have access to the frontend at `http://localhost:3001`
+You should be able to have access to the frontenhered at `http://localhost:3001`
 
 ### Without docker
 
