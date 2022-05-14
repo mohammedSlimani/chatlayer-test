@@ -13,12 +13,8 @@ COPY . .
 RUN npm install
 
 
-# install feathers-cli; must be done here to make sure feathers command is installed in /usr/local/bin of container
-RUN npm install @feathersjs/cli -g
-
-RUN npm install --global mocha
-
-RUN npm install --global eslint
+# install feathers-cli ; must be done here to make sure these commands are installed in /usr/local/bin of container
+RUN npm install --global @feathersjs/cli
 
 # changing ownership of the app directory to the node user and group
 RUN chown -R node:node /home/app
