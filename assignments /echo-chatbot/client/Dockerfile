@@ -12,7 +12,11 @@ COPY . .
 # following assumes the source code repo contains a package.json file!
 RUN npm install
 
-RUN chown -R node:node /home/app
+RUN mkdir -p build
+
+RUN chown -R node:node /home/app/build
+
+RUN npm run build
 
 # set a user with non-root privileges to increase security!
 USER node

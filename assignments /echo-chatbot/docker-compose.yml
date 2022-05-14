@@ -20,6 +20,7 @@ services:
     volumes:
       - ./client:/home/app
       - /home/app/node_modules
+      - /home/app/build
     depends_on:
       - backend
 networks:

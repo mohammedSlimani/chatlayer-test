@@ -12,10 +12,6 @@ COPY . .
 # following assumes the source code repo contains a package.json file!
 RUN npm install
 
-
-# install feathers-cli ; must be done here to make sure these commands are installed in /usr/local/bin of container
-RUN npm install --global @feathersjs/cli
-
 # changing ownership of the app directory to the node user and group
 RUN chown -R node:node /home/app
 
