@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  backend:
+    build: .
+    container_name: backend
+    networks:
+      - dev-net
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./:/home/app
+      - /home/app/node_modules
+networks:
+  dev-net:
