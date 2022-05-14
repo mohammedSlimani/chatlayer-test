@@ -10,5 +10,15 @@ services:
     volumes:
       - ./:/home/app
       - /home/app/node_modules
+  frontend:
+    build: client/
+    container_name: frontend
+    networks:
+      - dev-net
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client:/home/app
+      - /home/app/node_modules
 networks:
   dev-net:
