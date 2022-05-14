@@ -19,11 +19,14 @@ export default function Message(props) {
   const messageObj = props.message
   const direction = messageObj.creator === "bot" ? "left" : "right"
   const name = messageObj.creator === "bot"? "BOT" : "YOU"
+  const bgImage = messageObj.creator === "bot"?
+    "https://icons.iconarchive.com/icons/martin-berube/character/256/Robot-icon.png"
+    : "https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-8/256/User-blue-icon.png"
   return (
     <div className={`msg ${direction}-msg`}>
       <div
         className="msg-img"
-        style={{backgroundImage: "url(https://image.flaticon.com/icons/svg/327/327779.svg)"}}
+        style={{backgroundImage: `url(${bgImage})`}}
       />
 
       <div className="msg-bubble">

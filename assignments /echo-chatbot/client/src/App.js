@@ -20,13 +20,10 @@ function App() {
   const customMessages = [
     {
       creator: 'bot',
-      message: 'wsup bro!'
-    },
-    {
-      creator: 'user',
-      message: 'Hey man, how are you doing'
+      message: 'I am a parrot I repeat everything that you tell me!'
     }
   ]
+
   // a list of messageObj
   const [messages, setMessages] = useState(customMessages)
   // a flag of when the bot is responding, the user cannot send a message if the bot didn't respond yet
