@@ -23,4 +23,4 @@ RUN chown -R node:node /home/app
 USER node
 
 # running the container opens a shell
-ENTRYPOINT /bin/bash
+ENTRYPOINT npm start

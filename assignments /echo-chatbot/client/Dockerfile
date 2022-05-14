@@ -18,4 +18,4 @@ RUN chown -R node:node /home/app
 USER node
 
 # running the container opens a shell
-ENTRYPOINT /bin/bash
+ENTRYPOINT npx serve -s build -l 3000
