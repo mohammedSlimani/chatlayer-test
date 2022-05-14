@@ -8,7 +8,7 @@ exports.Echo = class Echo {
    * This one gets called when the user send something. Returns the same thing that the user sent
    * @param data
    * @param params
-   * @returns {Promise<unknown>|Promise<unknown[]>}
+   * @returns {Promise<unknown>}
    */
   create (data, params) {
     return Promise.resolve(data);
