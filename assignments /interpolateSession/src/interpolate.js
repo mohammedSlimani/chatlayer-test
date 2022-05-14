@@ -29,7 +29,7 @@ const interpolate = (value, session = {}, options = {}) => {
 
     return value.replace(re, (...args) => {
         // we get the second catching group, since we start counting from 0 the second catching group is 1
-        return session[args[1]] || ''
+        return session[args[1]] || '' // if what we matched doesnt exist in the session object, return an empty string instead
     })
 };
 
