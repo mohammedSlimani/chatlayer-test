@@ -34,8 +34,8 @@ function App() {
    * @param {messageObj} message
    */
   const pushMessage = (message) => {
-    messages.push(message)
-    setMessages(messages)
+    // messages.push(message)
+    setMessages((messages) => [...messages, message])
   }
 
   /**
